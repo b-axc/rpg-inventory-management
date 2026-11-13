@@ -185,7 +185,7 @@ def check_out_page(department):
 # function to guide the user to each department
 def front_page():
     print("Hello! Welcome to 60FPS Electronics! \nWhat can we get you? \n \nPlease note that you must restart the program if you want to remove an item.\n")
-    department = int(input("Which section you looking for? \n 1. CPU \n \n 2. GPU \n \n 3. Motherboard \n \n 4. Power Supply \n \n 5. SSD \n \n"
+    department = int(input("Which section are you looking for? \n 1. CPU \n \n 2. GPU \n \n 3. Motherboard \n \n 4. Power Supply \n \n 5. SSD \n \n"
     " 6. Check Out \n \n Please type the desired number for the rest of the website. "))
     section(department)
 
