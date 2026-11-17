@@ -30,6 +30,7 @@ def cpu_page(department):
     global check_out
     global price
     while department == 1:
+        print("\nCPUs:")
         cpu = []
         cpu_product = int(input("\n 1. AMD RYZEN 7 5700XR $350 \n \n 2. INTEL i7 $320 \n \n 3. INTEL i9 $500 \n \n " 
                                 "4. AMD RYZEN 9 9400 $550 \n \n 5. INTEL i3 $150 \n \n 6. Done shopping.\n"))
@@ -58,6 +59,7 @@ def gpu_page(department):
     global price
     while department == 2:
         gpu = []
+        print("\nGPUs:")
         gpu_product = int(input("\n 1. MSI GeForce RTX 3050 6G $280 \n \n 2. PNY NVIDIA GeForce RTX 5060 8 GB $450 \n \n 3. XFX Swift " \
                                 "Radeon RX 9060 XT GDDR6 Gaming $500 \n \n 4. NVIDIA GeForce RTX 3060 Ti Founders Edition 8GB GDDR6 $350\n \n"
                                 " 5. NVIDIA Geforce Gtx Titan 6gb Gddr5 384bit $85 \n \n 6. Done shopping.\n"))
@@ -85,6 +87,7 @@ def mboard_page(department):
     global check_out
     global price
     while department == 3:
+        print("\nMotherboards:")
         mboard = []
         mboard_product = int(input("\n 1. ASRock B550M Phantom Gaming 4 AM4 AMD B550 Micro ATX $100 \n \n 2. ASUS B850-I ROG Strix Gaming WIFI AMD AM5 "
                                    "Mini-ITX Motherboard $365 \n \n 3. New Msi Z890 Gaming WIFI6E Lga 1851 Atx Intel DDR5 $220 \n \n " 
@@ -114,6 +117,7 @@ def psu_page(department):
     global check_out
     global price
     while department == 4:
+        print("\nPower Supply Units:")
         psu = []
         psu_product = int(input("\n 1. Corsair RMx Series RM850x Fully Modular Power Supply $200 \n \n 2. MSI MAG PCIE5 Power Supply $130 \n \n "
                                 "3. Rosewill VNW 650W 80+ White Certified Non-Modular Active PFC Design $170 \n \n "
@@ -143,6 +147,7 @@ def ssd_page(department):
     global check_out
     global price
     while department == 5:
+        print("\nSSDs:")
         ssd = []
         ssd_product = int(input("\n 1. Samsung 870 EVO SATA $350 \n \n 2. PNY CS900 Solid State Drive $120 \n \n 3. Samsung 990 Solid State Drive $230 \n \n " 
                                 "4. SanDisk Optimus 5100 $290 \n \n 5. Samsung 990 PRO 2 SSD $640 \n \n 6. Done shopping.\n"))
@@ -186,7 +191,7 @@ def check_out_page(department):
 def front_page():
     print("Hello! Welcome to 60FPS Electronics! \nWhat can we get you? \n \nPlease note that you must restart the program if you want to remove an item.\n")
     department = int(input("Which section are you looking for? \n 1. CPU \n \n 2. GPU \n \n 3. Motherboard \n \n 4. Power Supply \n \n 5. SSD \n \n"
-    " 6. Check Out \n \n Please type the number that the item or section is denoted by. "))
+    " 6. Check Out \n \n Please type the number that matches what you want to do for the rest of the website. "))
     section(department)
 
 # function to run the program
